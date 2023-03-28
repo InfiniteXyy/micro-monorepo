@@ -3,7 +3,7 @@
   "watch": [
     "../service-*/**/*",
     "../lib-service-core",
-    "../lib-ui-agent",
+    "../lib-ui-core",
     "./src"
   ],
   "extension": ["ts", "tsx"],

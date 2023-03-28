@@ -1,0 +1,5 @@
+{
+  "extends": "@xyz/config-typescript/ui.json",
+  "include": ["src", "server"],
+  "exclude": ["dist", "build", "node_modules"]
+}

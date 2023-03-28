@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@xyz/config-typescript": "workspace:*",
+    "eslint-config-xyz": "workspace:*",
+    "esno": "^0.16.3",
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.6",
+    "turbo": "^1.8.5",
+    "typescript": "^5.0.2",
+    "vitest": "^0.29.7"
+  }
+}

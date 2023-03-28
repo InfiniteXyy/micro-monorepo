@@ -1,0 +1,26 @@
+{
+  "name": "@xyz/lib-ui-core",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "./src/index.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./server/dev-server.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@xyz/lib-service-core": "workspace:*",
+    "@xyz/service-demo": "workspace:*",
+    "@xyz/service-search": "workspace:*",
+    "@tanstack/react-query": "^4.28.0",
+    "@trpc/client": "^10.17.0",
+    "@trpc/react-query": "^10.17.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@trpc/server": "^10.17.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11"
+  }
+}

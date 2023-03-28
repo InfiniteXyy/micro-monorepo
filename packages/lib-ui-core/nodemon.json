@@ -1,0 +1,8 @@
+{
+  "verbose": false,
+  "watch": ["../service-*/**/*", "../lib-service-core", "./src", "./server"],
+  "extension": ["ts", "tsx"],
+  "execMap": {
+    "ts": "esno"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "verbose": false,
+  "watch": [
+    "../service-*/**/*",
+    "../lib-service-core",
+    "../lib-ui-agent",
+    "./src"
+  ],
+  "extension": ["ts", "tsx"],
+  "execMap": {
+    "ts": "esno"
+  }
+}

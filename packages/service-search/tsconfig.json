@@ -1,0 +1,8 @@
+{
+  "extends": "@xyz/config-typescript/service.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["dist", "build", "node_modules"]
+}

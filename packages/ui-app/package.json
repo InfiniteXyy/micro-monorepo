@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts*\" && tsc --noEmit",
+    "lint": "eslint \"**/*.{tsx,ts}\" && tsc --noEmit",
     "dev": "vite",
     "build": "vite build"
   },

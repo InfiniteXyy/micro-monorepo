@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "./src/index.tsx",
   "scripts": {
-    "lint": "eslint \"**/*.ts*\" && tsc --noEmit"
+    "lint": "eslint \"**/*.{tsx,ts}\" && tsc --noEmit"
   },
   "dependencies": {
     "@xyz/lib-ui-core": "workspace:*",

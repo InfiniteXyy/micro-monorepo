@@ -13,6 +13,8 @@ pnpm run dev
 # ui is on localhost:5173, backend on localhost:2022, swagger on localhost:1999 (can try out)
 ```
 
+![structure](structure.png)
+
 ## Tech Stack
 
 - React 18

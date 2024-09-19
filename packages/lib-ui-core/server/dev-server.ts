@@ -1,5 +1,6 @@
 import { startServer } from "@xyz/lib-service-core";
-import { devPort } from "../config.json";
+// @ts-expect-error -- import js config
+import { devPort } from "../config.js";
 import { appRouter } from "./services";
 
 startServer(appRouter, devPort);

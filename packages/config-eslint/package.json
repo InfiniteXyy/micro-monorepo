@@ -1,15 +1,13 @@
 {
-  "name": "eslint-config-xyz",
+  "name": "@xyz/config-eslint",
   "version": "0.0.0",
-  "main": ".eslintrc.cjs",
   "license": "MIT",
+  "main": "eslint.config.mjs",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0",
-    "eslint": "^7.23.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-turbo": "latest",
-    "eslint-plugin-react": "7.31.8",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "@antfu/eslint-config": "^3.6.2",
+    "@eslint-react/eslint-plugin": "^1.14.1",
+    "eslint": "^9.10.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc-e740d4b1-20240919",
+    "eslint-plugin-react-refresh": "^0.4.12"
   }
 }

@@ -1,18 +1,18 @@
 {
   "name": "@xyz/service-search",
+  "type": "module",
   "version": "0.0.0",
   "main": "./src/index.ts",
-  "type": "module",
   "scripts": {
     "build": "tsc",
-    "lint": "tsc --noEmit",
+    "lint": "eslint . && tsc --noEmit",
     "start": "node dist/server.js",
     "test": "vitest --run",
     "dev:test": "vitest"
   },
   "dependencies": {
-    "@trpc/server": "^10.17.0",
+    "@trpc/server": "catalog:",
     "@xyz/lib-service-core": "workspace:*",
-    "zod": "^3.21.4"
+    "zod": "catalog:"
   }
 }

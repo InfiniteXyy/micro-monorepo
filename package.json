@@ -2,21 +2,23 @@
   "name": "fullstack-monorepo",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@9.10.0",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "taze": "taze",
+    "format": "npx eslint . --fix"
   },
   "devDependencies": {
+    "@xyz/config-eslint": "workspace:*",
     "@xyz/config-typescript": "workspace:*",
-    "eslint-config-xyz": "workspace:*",
-    "esno": "^0.16.3",
-    "nodemon": "^2.0.21",
-    "prettier": "^2.8.6",
-    "turbo": "^1.8.5",
-    "typescript": "^5.0.2",
-    "vitest": "^0.29.7"
+    "esno": "^4.7.0",
+    "nodemon": "^3.1.6",
+    "taze": "^0.16.9",
+    "turbo": "^2.1.2",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
   }
 }

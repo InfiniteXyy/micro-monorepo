@@ -1,4 +1,4 @@
-import { appRouter } from "./index.js";
-import { startServer } from "@xyz/lib-service-core";
+import { startServer } from '@xyz/lib-service-core';
+import { appRouter } from './index.js';
 
 startServer(appRouter);

@@ -1,12 +1,13 @@
-import { inferAsyncReturnType, initTRPC, TRPCError } from "@trpc/server";
-import { OpenApiMeta } from "trpc-openapi";
-import { CreateExpressContextOptions } from "@trpc/server/adapters/express";
+import type { inferAsyncReturnType } from '@trpc/server';
+import type { CreateExpressContextOptions } from '@trpc/server/adapters/express';
+import type { OpenApiMeta } from 'trpc-openapi';
+import { initTRPC, TRPCError } from '@trpc/server';
 
-export async function createContext({ req, res }: CreateExpressContextOptions) {
-  if (req.headers.authorization?.split(" ")[1] !== "secret") {
+export async function createContext({ req }: CreateExpressContextOptions) {
+  if (req.headers.authorization?.split(' ')[1] !== 'secret') {
     return { user: null };
   }
-  return { user: { name: "xyy" } };
+  return { user: { name: 'xyy' } };
 }
 
 const t = initTRPC
@@ -16,7 +17,7 @@ const t = initTRPC
 
 const authMiddleware = t.middleware(async ({ next, ctx }) => {
   if (!ctx.user) {
-    throw new TRPCError({ code: "UNAUTHORIZED" });
+    throw new TRPCError({ code: 'UNAUTHORIZED' });
   }
   return next({ ctx: { user: ctx.user } });
 });
